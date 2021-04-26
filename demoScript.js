@@ -33,13 +33,6 @@ return true;
 
 function loadPetInfo() {
 document.getElementById('petInfo').innerHTML = "An animal’s eyes have the power to speak a great language.";
+event.preventDefault();
 }
 
-function copyText() {
-alert('Inside function');
-var text = document.getElementById('regNoVal');
-text.select();
-text..setSelectionRange(0, 99999);
-document.execCommand("copy");
-
-}
