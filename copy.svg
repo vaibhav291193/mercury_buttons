@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icons / Microaction / Copy</title>
+    <g id="Icons-/-Microaction-/-Copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Copy" transform="translate(1.000000, 0.000000)" stroke="#0467C6">
+            <polyline id="Shape" points="2.95 2.94 2.95 0.48 13.48 0.48 13.48 13.09 11.02 13.09"></polyline>
+            <rect id="Rectangle-path" x="0.5" y="2.94" width="10.52" height="12.6"></rect>
+        </g>
+    </g>
+</svg>

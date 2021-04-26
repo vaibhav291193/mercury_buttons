@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Buttons Demo</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="inputField.css" rel="stylesheet">
+<link href="dropdown.css" rel="stylesheet">
+<link href="buttons.css" rel="stylesheet">
+<link href="custom.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+<script src="inputFieldScript.js"></script>
+</head>
+
+<body>
+<div class="row" style="margin-left:24px;">
+<div class="col-md-3"></div>
+<div class="col-md-9 row" >
+<h1 id=formHeading">Pet Information Form 1</h1>
+<form name="form1" aria-labelledby="formHeading" >
+<label id="petNameLbl">Pet name</label><p id="petNameHT" class="hintText">The pet’s name must be longer than 5 characters.</p><input id="petName" type="text" autocomplete="no" aria-labelledby="petNameLbl petNameHT">
+<br/>
+
+<label id="petTypeLbl">Pet type</label><select id="petType" aria-labelledby="petTypeLbl errMsgPetType" aria-invalid="false" class="ds-cpc-control-select__tpl" style="display:none;">    <option selected="selected" value="0">Select Pet Type</option>    <option value="1">Cat</option>    <option value="2">Dog</option>    <option value="3">Goat</option>    </select><div id="errMsgPetType" class="ds-error-dd" ></div>
+<br role="none"/>
+<br role="none"/>
+<br role="none"/>
+
+<button type="submit" class="primary-button by-keyboard" onclick="validateFormOne()" >
+                Submit
+            </button>
+            <button type="button" class="secondary-button by-keyboard">Cancel</button><br>
+
+<div id="successMessage" class="formMsg" style="padding-top:12px;" ></div>
+
+</form>
+
+<h1 id=formHeading2" style="padding-top:64px;" >Pet Information Form 2</h1>
+<form name="form2" aria-labelledby="formHeading2" onSubmit="return validateForm();">
+<label id="petNameLbl2">Pet name</label><p id="petNameHT2" class="hintText">The pet’s name must be longer than 5 characters.</p><input type="text" autocomplete="no" aria-labelledby="petNameLbl2 petNameHT2">
+<br/>
+
+<label id="petTypeLbl2">Pet type</label><select id="petType2" aria-labelledby="petTypeLbl2 errMsgPetType2" aria-invalid="false" class="ds-cpc-control-select__tpl" style="display:none;">    <option selected="selected" value="0">Select Pet Type</option>    <option value="Cat">Cat</option>    <option value="Dog">Dog</option>    <option value="Goat">Goat</option>    </select><div id="errMsgPetType2" class="ds-error-dd" ></div>
+<br role="none"/>
+<br role="none"/>
+<br role="none"/>
+
+<a role="button" class="micro-buttons by-keyboard" href="#" onclick="loadPetInfo()" >Read more on pet information</a>            
+
+<div>
+<span id="petInfo" class="formMsg" style="padding-top:12px;"></span>
+</div>
+
+</form>
+
+<h1 id=formHeading3" style="padding-top:64px;" >Registration Details</h1>
+<form name="form3" aria-labelledby="formHeading3" onSubmit="return validateForm();">
+<label id="regNo">Your registration Number is</label><input id="regNoVal"  type="text" autocomplete="no" aria-labelledby="regNo" value="04ON21165723">
+
+<a role="button" class="micro-buttons copy by-keyboard" href="#" onclick="copyText()"  aria-label="Copy">Copy</a>            
+
+</form>
+
+
+<br role="none"/>
+<br role="none"/>
+<br role="none"/>
+<br role="none"/>
+<br role="none"/>
+
+</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+<script src="dropdownScript.js"></script>
+
+<script src=buttons-script.js"></script>
+<script src="demoScript.js"></script>
+
+</body>
+
+<script>
+document.querySelectorAll('textarea').forEach((el) => {
+        el.addEventListener('keyup', maxCharacterLength);
+    });    
+
+    
+</script>
+</html>
