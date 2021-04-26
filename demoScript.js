@@ -36,3 +36,9 @@ document.getElementById('petInfo').innerHTML = "An animal’s eyes have the powe
 event.preventDefault();
 }
 
+function copyText() {
+var cText = document.getElementById("regNoVal");
+cText.select();
+cText.setSelectionRange(0, 99999);
+document.execCommand("copy");
+}
