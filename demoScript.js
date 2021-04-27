@@ -41,4 +41,5 @@ var cText = document.getElementById("regNoVal");
 cText.select();
 cText.setSelectionRange(0, 99999);
 document.execCommand("copy");
+document.getElementById("copyButton").focus();
 }
