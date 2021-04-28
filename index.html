@@ -12,6 +12,7 @@
 <link href="custom.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
 <script src="inputFieldScript.js"></script>
+
 </head>
 
 <body>
@@ -47,10 +48,12 @@
 <br role="none"/>
 <br role="none"/>
 
-<a role="button" class="micro-buttons by-keyboard" href="#" onclick="loadPetInfo()" >Read more on pet information</a>            
+<a id="readButton" role="button" class="micro-buttons by-keyboard" href="javascript:loadPetInfo()"  >Read more on pet information</a>            
 
 <div>
+<div class="col-md-8">
 <span id="petInfo" class="formMsg" style="padding-top:12px;"></span>
+</div>
 </div>
 
 </form>
@@ -59,7 +62,7 @@
 <form name="form3" aria-labelledby="formHeading3" onSubmit="return validateForm();">
 <label id="regNo">Your registration Number is</label><input id="regNoVal"  type="text" autocomplete="no" aria-labelledby="regNo" value="04ON21165723">
 
-<a id="copyButton" role="button" class="micro-buttons copy by-keyboard" href="#" onclick="copyText()"  aria-label="Copy">Copy</a>            
+<a id="copyButton" role="button" class="micro-buttons copy by-keyboard" tabindex="0" onclick="copyText()"  aria-label="Copy">Copy</a>            
 
 </form>
 
@@ -74,9 +77,8 @@
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-<script src="dropdownScript.js"></script>
-
 <script src="buttons-script.js"></script>
+<script src="dropdownScript.js"></script>
 <script src="demoScript.js"></script>
 
 </body>
@@ -88,4 +90,4 @@ document.querySelectorAll('textarea').forEach((el) => {
 
     
 </script>
-                           </html>
+</html>
