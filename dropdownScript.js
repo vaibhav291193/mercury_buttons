@@ -239,7 +239,7 @@ function DSCpcSelect(selectElm) {
             && key !== 35
             && key !== 36
             && key !== 27
-            && key !== 13) return;
+            && key !== 13 && key !== 32) return;
 
         
         if (key === 9 || key === 27) {
@@ -256,7 +256,13 @@ function DSCpcSelect(selectElm) {
             return;
         }
 
-        if (key === 35) { // END KEY{
+        if (key === 32) {
+            // Space bar 
+            open();
+            return;
+        }
+
+if (key === 35) { // END KEY{
             chooseOption(options[options.length-1]);
         }
         else if (key === 36) { // HOME KEY
