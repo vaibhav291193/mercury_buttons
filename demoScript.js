@@ -32,7 +32,14 @@ return true;
 }
 
 function loadPetInfo() {
-document.getElementById('petInfo').innerHTML = "An animal’s eyes have the power to speak a great language.";
+var buttonText = document.getElementById("readButton").innerHTML;
+if(buttonText.includes("more")) {
+document.getElementById("readButton").innerHTML = buttonText.replace("more", "less");
+document.getElementById('petInfo').innerHTML = "A pet, or companion animal, is an animal kept primarily for a person's company or entertainment rather than as a working animal, livestock or a laboratory animal. ... Two of the most popular pets are dogs and cats; the technical term for a cat lover is an ailurophile and a dog lover a cynophile.<br><br>There are many health benefits of owning a pet. They can increase opportunities to exercise, get outside, and socialize. Regular walking or playing with pets can decrease blood pressure, cholesterol levels, and triglyceride levels. Pets can help manage loneliness and depression by giving us companionship.";
+} else {
+document.getElementById("readButton").innerHTML = buttonText.replace("less", "more");
+document.getElementById('petInfo').innerHTML = "";
+}
 event.preventDefault();
 }
 
