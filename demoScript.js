@@ -49,7 +49,7 @@ cText.select();
 cText.setSelectionRange(0, 99999);
 document.execCommand("copy");
 document.getElementById("copyButton").focus();
-document.getElementById("announcement").innerHTML = "Text Copied";
+document.getElementById("announcement").innerHTML = "Your registration number is copied";
 setTimeout(function () {
 document.getElementById("announcement").innerHTML = "";
 
