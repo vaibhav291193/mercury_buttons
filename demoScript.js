@@ -48,7 +48,11 @@ var cText = document.getElementById("regNoVal");
 cText.select();
 cText.setSelectionRange(0, 99999);
 document.execCommand("copy");
-document.getElementById("announcement").innerHTML = "";
-document.getElementById("announcement").innerHTML = "Text Copied";
 document.getElementById("copyButton").focus();
+document.getElementById("announcement").innerHTML = "Text Copied";
+setTimeout(function () {
+document.getElementById("announcement").innerHTML = "";
+
+}
+,2);
 }
