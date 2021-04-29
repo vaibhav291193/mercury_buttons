@@ -25,15 +25,12 @@
 <br/>
 
 <label id="petTypeLbl">Pet type</label><select id="petType" aria-labelledby="petTypeLbl errMsgPetType" aria-invalid="false" class="ds-cpc-control-select__tpl" style="display:none;">    <option selected="selected" value="0">Select Pet Type</option>    <option value="1">Cat</option>    <option value="2">Dog</option>    <option value="3">Goat</option>    </select><div id="errMsgPetType" class="ds-error-dd" ></div>
-<br role="none"/>
-<br role="none"/>
-<br role="none"/>
-
+<div style="padding-top:24px;">
 <button type="submit" class="primary-button by-keyboard" onclick="validateFormOne()" >
                 Submit
             </button>
             <button type="button" class="secondary-button by-keyboard">Cancel</button><br>
-
+</div>
 <div id="successMessage" class="formMsg" style="padding-top:12px;" ></div>
 
 </form>
@@ -44,12 +41,10 @@
 <br/>
 
 <label id="petTypeLbl2">Pet type</label><select id="petType2" aria-labelledby="petTypeLbl2 errMsgPetType2" aria-invalid="false" class="ds-cpc-control-select__tpl" style="display:none;">    <option selected="selected" value="0">Select Pet Type</option>    <option value="Cat">Cat</option>    <option value="Dog">Dog</option>    <option value="Goat">Goat</option>    </select><div id="errMsgPetType2" class="ds-error-dd" ></div>
-<br role="none"/>
-<br role="none"/>
-<br role="none"/>
+<div style="padding-top:24px;">
 
-<a id="readButton" role="button" class="micro-buttons by-keyboard" href="javascript:loadPetInfo()"  >Read more on pet information<span><img id="chevron" style="padding-left:16px;" src="chevron_down.svg" alt="" /></span></a>            
-
+<a id="readButton" role="button" class="micro-buttons by-keyboard" href="javascript:loadPetInfo()"  >Read more on pet information<span><img id="chevron" style="padding-left:10px;" src="chevron_down.svg" alt="" /></span></a>            
+</div>
 <div>
 <div class="col-md-8" style="padding-top:24px;">
 <span id="petInfo" class="formMsg" style="padding-top:12px;"></span>
